@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b1a74662a4.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    
+<!-- header section -->
+
+<div class="sec1-container">
+    <div class="sec1 header">
+        <a href="" class="dine"><h1>dine</h1></a>
+        <h2>Reservations</h1>
+        <p>We can’t wait to host you. If you have any <br> special requirements please feel free to call on <br> the phone number below. We’ll be happy to <br> accommodate you.</p>
+    </div>
+    <div class="nav-container b2">
+        <i class="menu-toggle-btn fas fa-bars"></i>
+        <nav class="nav-menu">
+            <a href="../index.html"><i class="fas fa-home home"></i>Home</a>
+            <a href="contact.html"><i class="fa-solid fa-phone home"></i>Contact Us</a>
+            <a href="menu.html"><i class="fa-solid fa-utensils home"></i>Our Menu</a>
+        </nav>
+    </div>
+</div>
+
+
+<!-- form section -->
+
+<div class="form-container">
+    <div class="shadow"></div>
+    <form onsubmit="event.preventDefault(); validateForm()">
+
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Name">
+        <small class="error"></small>
+
+
+        <label for="email">Email: </label>
+        <input type="text" id="email" placeholder="Email">
+        <small class="error"></small>
+
+        <div class="pick-container">
+            <label for="reservedate" class="reservelabel">Pick A Date</label>
+            <input type="date" id="reservedate" class="reserve">
+            <small class="error"></small>
+        </div>
+
+        <div class="pick-container">
+            <label for="thetime" class="reservelabel">Pick A Time</label>
+            <input type="time" id="thetime" class="reserve">
+            <small class="error"></small>
+        </div>
+
+        <div class="num">
+            <input type="button" value="-" class="num-btn minus">
+            <p class="people"><span class="people-num">Number of people</span> <span class="peeps"></span></p>
+            <input type="button" value="+" class="num-btn plus">
+            <small class="error"></small>
+        </div>
+
+        <div class="center">
+            <input type="submit" value="Make Reservation">
+            <p id="success"></p>
+        </div>
+
+    </form>
+</div>
+
+<!-- --------------footer section------------------- -->
+
+<div class="footer-container">
+    <div class="sec7 row">
+        <div class="col">
+            <a href="#"><h1>dine</h1></a>
+        </div>
+        <div class="col">
+            <p>MARTHWAITE, SEDBERGH <br> CUMBRIA <br>+00 44 123 4567</p>
+        </div>
+        <div class="col">
+            <p>OPEN TIMES <br>
+                MON - FRI: 09:00 AM - 10:00 PM <br>
+                SAT - SUN: 09:00 AM - 11:30 PM</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="../scripts/form.js"></script>
+<script src="../scripts/index.js"></script>
+
+</body>
+</html>
